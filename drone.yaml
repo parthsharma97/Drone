@@ -1,12 +1,14 @@
 kind: pipeline
 name: default
-#Comment
+
 steps:
 - name: build
   image: maven:3.6.3-openjdk-11
   commands:
   - mvn clean install package -Dmaven.test.skip=true -Dpmd.failOnViolation=false 
-  
+ when:
+   event: tag
+    
 - name: publish  
   image: plugins/github-release
   settings:
