@@ -14,5 +14,8 @@ steps:
   settings:
     api_key:
       from_secret: github_token
+    username: parthsharma97
+    password: P@rth123$
+    repo: parthsharma97/Drone
   when:
     event: tag
