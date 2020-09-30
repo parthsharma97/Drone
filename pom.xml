@@ -20,4 +20,9 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <properties>
+  <sonar.projectKey>parthsharma97_Drone</sonar.projectKey>
+  <sonar.organization>parthsharma97</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>
 </project>
